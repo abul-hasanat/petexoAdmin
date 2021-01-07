@@ -1,0 +1,118 @@
+/* 
+
+.loginForm{
+	border: 2px solid #5a7b5a;
+	width: 400px;
+	margin-left: 457px;
+	background-color: white;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	border-radius: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+	
+	.signupForm {
+	
+		width: 320px;
+		margin-left: 10px;
+	}
+
+	.loginForm {
+	
+		width: 90%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+
+
+
+
+
+html, body {
+	overflow-x: hidden;
+  }
+  body {
+	position: relative
+  } */
+
+
+  .loginForm{
+	border: 2px solid #5a7b5a;
+	/* width: 400px; */
+	margin-left:  200px !important;
+	background-color: white;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	border-radius: 10px;
+}
+
+
+@media  screen and (max-width: 1100px) {
+	
+	.signupForm {
+	
+		width: 350px;
+		margin-left: 10px;
+	}
+
+	.loginForm {
+	
+		
+		margin-left:  100px !important;
+	
+	}
+} 
+
+
+
+@media  screen and (max-width: 1000px) {
+	
+	.signupForm {
+	
+		width: 350px;
+		margin-left: 10px;
+	}
+
+	.loginForm {
+	
+		
+		margin-left:  180px !important;
+	
+	}
+} 
+
+ 
+@media  screen and (max-width: 900px) {
+	
+	.signupForm {
+	
+		width: 350px;
+		margin-left: 10px;
+	}
+
+	.loginForm {
+	
+		
+		margin-left:  150px !important;
+	
+	}
+} 
+@media only screen and (max-width: 600px) {
+	
+	.signupForm {
+	
+		width: 350px;
+		margin-left: 10px;
+	}
+
+	.loginForm {
+	
+		/* width: 90%; */
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+}

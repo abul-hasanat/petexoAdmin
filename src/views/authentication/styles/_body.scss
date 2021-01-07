@@ -1,0 +1,444 @@
+// // @import "./nabvar";
+
+// @mixin bodyAreas($marginLeft, $bodyWidth) {
+// 	border-radius: 5px;
+// 	background-color: #b6b3b3;
+// 	color: black;
+// 	width: $bodyWidth;
+// 	padding-top: 10px;
+// 	margin-left: $marginLeft; // $marginLeft;
+// }
+
+// .main_content {
+// 	@include bodyAreas(250px, 79.7%);
+// }
+
+// // #check:checked ~ .header i,
+// // .main_content {
+// // 	@include bodyAreas(60px, 95%);
+// // }
+
+// #check:checked ~ .sidebar a span,
+// .main_content {
+// 	@include bodyAreas(60px, 79.7%);
+// 	padding-left: 200px;
+// 	//display: none;
+// }
+
+// // #check:checked ~ .main_content {
+// // 	@include bodyAreas(250px, 79.7%);
+// // }
+// .pageHadding {
+// 	margin-left: 150px;
+// 	color: white;
+// 	font-weight: bold;
+// }
+// /* Style inputs, select elements and textareas */
+// input[type="text"],
+// select,
+// textarea {
+// 	width: 100%;
+// 	padding: 12px;
+// 	border: 1px solid #ccc;
+// 	border-radius: 4px;
+// 	box-sizing: border-box;
+// 	resize: vertical;
+// }
+
+// .file_upload {
+// 	height: 200px;
+// 	width: 200px;
+// 	background-color: red;
+// 	color: black;
+// 	margin-left: 400px;
+// 	margin-top: 600px;
+// }
+
+// /* Style the label to display next to the inputs */
+// label {
+// 	padding: 12px 12px 12px 0;
+// 	display: inline-block;
+// }
+
+// .main_listItem {
+// 	border-radius: 5px;
+// 	background-color: #b6b3b3;
+// 	color: black;
+// 	padding-left: 250px;
+// }
+
+// /* Floating column for labels: 25% width */
+// .col-25 {
+// 	float: left;
+// 	width: 20%;
+// 	margin-top: 6px;
+// 	color: black;
+// 	font-weight: bold;
+// 	padding-left: 30px;
+// }
+
+// .col-35 {
+// 	border-radius: 5px;
+
+// 	float: left;
+// 	width: "242px";
+// 	margin-top: 6px;
+// 	color: black;
+// 	font-weight: bold;
+// 	height: "30px";
+// }
+// /* Floating column for inputs: 75% width */
+// .col-75 {
+// 	float: left;
+// 	width: 50%;
+// 	margin-top: 6px;
+// 	padding-right: 30px;
+// }
+
+// .col-doubleDDL {
+// 	float: left;
+// 	width: 23.75%;
+// 	margin-top: 6px;
+// 	padding-right: 30px;
+// }
+
+// /* Clear floats after the columns */
+// .row:after {
+// 	content: "";
+// 	display: table;
+// 	clear: both;
+// }
+
+// /* Heading Sections */
+
+// .labelSection {
+// 	font-size: 20px;
+// 	font-weight: bold;
+// }
+
+// /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+// @media screen and (max-width: 600px) {
+// 	.col-25,
+// 	.col-75,
+// 	input[type="submit"] {
+// 		width: 79.5%;
+// 		/* margin-top: 0; */
+// 		padding-right: 30px;
+// 	}
+// 	.main_content {
+// 		left: 60px;
+// 	}
+// 	#check ~ .header i {
+// 		left: 60px;
+// 	}
+
+// 	#check:checked ~ .sidebar {
+// 		left: -190px;
+// 	}
+
+// 	#check:checked ~ .sidebar a span {
+// 		display: none;
+// 	}
+
+// 	#check:checked ~ .sidebar a {
+// 		font-size: 20px;
+// 		margin-left: 170px;
+// 		width: 80px;
+// 	}
+
+	
+// }
+
+// /* Button  Styling */
+
+// /* Login Page */
+// // .loginForm {
+// // 	border: 3px solid #f1f1f1;
+// // 	width: 400px;
+// // 	margin-left: 457px;
+// // 	background-color: white;
+// // 	margin-top: 70px;
+// // 	margin-bottom: 70px;
+// // }
+
+// input[type="text"],
+// input[type="password"] {
+// 	width: 100%;
+// 	padding: 12px 20px;
+// 	margin: 8px 0;
+// 	display: inline-block;
+// 	border: 1px solid #ccc;
+// 	box-sizing: border-box;
+// }
+
+// .cancelbtn {
+// 	width: auto;
+// 	padding: 10px 18px;
+// 	background-color: #006400;
+// }
+
+// .imgcontainer {
+// 	text-align: center;
+// 	margin: 24px 0 12px 0;
+// }
+
+// img.avatar {
+// 	width: 40%;
+// 	border-radius: 50%;
+// }
+
+// .container {
+// 	padding: 16px;
+// }
+
+// span.psw {
+// 	float: right;
+// 	padding-top: 16px;
+// }
+
+// /* Change styles for span and cancel button on extra small screens */
+// @media screen and (max-width: 300px) {
+// 	span.psw {
+// 		display: block;
+// 		float: none;
+// 	}
+// 	.cancelbtn {
+// 		width: 100%;
+// 	}
+// }
+
+// /* ..................................... Button Design  start ................... */
+
+// button[type="submit"] {
+// 	background-color: #4caf50;
+// 	color: white;
+// 	padding: 14px 20px;
+// 	margin: 8px 0;
+// 	border: none;
+// 	cursor: pointer;
+// 	width: 100%;
+// }
+
+// button:hover {
+// 	opacity: 0.8;
+// }
+
+// /* Style the submit button */
+// input[type="submit"] {
+// 	background-color: #4caf50;
+// 	color: white;
+// 	padding: 12px 20px;
+// 	border: none;
+// 	border-radius: 4px;
+// 	cursor: pointer;
+// 	margin-bottom: 20px;
+
+// 	/* margin-left: 500px; */
+// }
+
+// .btnListDel {
+// 	background-color: #b10c0c;
+// 	color: white;
+// 	padding: 6px 12px;
+// 	border: none;
+// 	border-radius: 4px;
+// 	cursor: pointer;
+// }
+// .btnListEdit {
+// 	background-color: #8a7609;
+// 	color: white;
+// 	padding: 6px 12px;
+// 	border: none;
+// 	border-radius: 4px;
+// 	cursor: pointer;
+// }
+// .btnApproved {
+// 	background-color: #296e09;
+// 	color: white;
+// 	padding: 6px 12px;
+// 	border: none;
+// 	border-radius: 4px;
+// 	cursor: pointer;
+// }
+// .btnPending {
+// 	background-color: #8a7609;
+// 	color: white;
+// 	padding: 6px 12px;
+// 	border: none;
+// 	border-radius: 4px;
+// 	cursor: pointer;
+// }
+// .btnListShow {
+// 	transition-duration: 0.4s;
+// 	width: 100px;
+// 	height: 40px;
+// 	position: absolute;
+// 	right: 326px;
+// 	top: 100px;
+// }
+
+// .btnListShow:hover {
+// 	background-color: #4caf50; /* Green */
+// 	color: white;
+// }
+
+// /* ----- error message -------------- */
+
+// .errorMessage {
+// 	font-size: 12px;
+// 	color: red;
+// }
+// /* ----- Box -------------- */
+// #serviceBox {
+// 	width: 100%;
+// 	margin: 0 auto;
+// 	margin-top: 25px;
+// 	/* height: 250px; */
+// 	border: 1px solid black;
+// 	display: grid;
+// 	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+// }
+
+// .box {
+// 	height: 250px;
+// 	background-color: white;
+// 	border: 1px solid #bdbdbd;
+// 	-webkit-border-radius: 5px;
+// 	border-radius: 5px;
+// 	-moz-box-shadow: 0 0 10px #bdbdbd;
+// 	-webkit-box-shadow: 0 0 10px #bdbdbd;
+// 	box-shadow: 0 0 10px #bdbdbd;
+// }
+// .membershipItem,
+// .membershipValue {
+// 	float: left;
+// 	width: 50%;
+// }
+
+// .paymentsectionlast {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	box-sizing: border-box;
+// 	border-left: 1px solid #bbb;
+// 	border-right: 1px solid #bbb;
+// 	padding-top: 20px;
+// 	margin-left: 0x;
+// 	margin-right: 0px;
+// 	color: white;
+// 	background: #555;
+// 	border-bottom-left-radius: 10px;
+// 	border-bottom-right-radius: 10px;
+// 	border-bottom: 1px solid #bbb;
+// 	margin-bottom: 5px;
+// 	padding-bottom: 15px;
+// }
+
+// .cost-price {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	box-sizing: border-box;
+// 	color: #ccc;
+// 	text-align: center;
+// }
+
+// .billing-cycle {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	line-height: 1.42857143;
+// 	color: #ccc;
+// 	text-align: center;
+// 	box-sizing: border-box;
+// 	margin-top: -5px;
+// 	font-size: 0.9em;
+// }
+
+// .sign-up {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	line-height: 1.42857143;
+// 	color: white;
+// 	box-sizing: border-box;
+// 	text-align: center;
+// 	font-size: 1.1em;
+// 	margin-bottom: 5px;
+// 	border-radius: 100px;
+// 	padding-left: 20px;
+// 	padding-right: 20px;
+// 	border: darkgray;
+// }
+// .planname {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	box-sizing: border-box;
+// 	border-left: 1px solid #bbb;
+// 	border-right: 1px solid #bbb;
+// 	padding-bottom: 0px;
+// 	margin-left: 0px;
+// 	margin-right: 0px;
+// 	border-bottom: 1px solid #eee;
+// 	border-top-left-radius: 10px;
+// 	border-top-right-radius: 10px;
+// 	border-top: 1px solid #bbb;
+// 	margin-top: 0px;
+// 	padding-top: 0px;
+// 	text-align: center;
+// 	color: white;
+// 	background: #337ab7;
+// }
+
+// .aligned-features-section {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	color: #333;
+// 	box-sizing: border-box;
+// 	border-left: 1px solid #bbb;
+// 	border-right: 1px solid #bbb;
+// 	padding-top: 10px;
+// 	padding-bottom: 10px;
+// 	margin-left: 0px;
+// 	margin-right: 0px;
+// 	border-bottom: 1px solid #eee;
+// 	background: white;
+// 	min-height: 72px;
+// }
+// .feature-row {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	color: #333;
+// 	box-sizing: border-box;
+// 	position: relative;
+// 	text-align: right;
+// 	padding-left: 20px;
+// 	padding-right: 20px;
+// }
+// .feature-name {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	color: #333;
+// 	text-align: right;
+// 	box-sizing: border-box;
+// 	display: inline-block;
+// 	float: left;
+// }
+// .feature-value {
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	color: #333;
+// 	box-sizing: border-box;
+// 	display: inline-block;
+// 	text-align: right;
+// }
