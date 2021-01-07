@@ -67,12 +67,9 @@ export default function Dashboard() {
 
 
 
-  useEffect(() => {
-    activeItem(id);
-    storeList();
-  },[id]);
+  
 
-  function  activeItem (id){
+  function  activeItem (){
     var typeid = 2;
     var id2 = 1
   
@@ -102,7 +99,10 @@ export default function Dashboard() {
             .catch((err) => console.log(err));
           };
           
-       
+          useEffect(() => {
+            activeItem();
+            storeList();
+          },[1]);
       
 
   return (

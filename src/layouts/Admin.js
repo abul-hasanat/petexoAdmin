@@ -38,7 +38,7 @@ const switchRoutes = (
   </Switch>
 );
 
-console.log("switch List" + routes)
+
 
 const useStyles = makeStyles(styles);
 
