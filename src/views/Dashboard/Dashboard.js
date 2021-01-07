@@ -64,7 +64,7 @@ export default function Dashboard() {
   const [pandingItem, setpandingItem] = useState(0);
  
   const [storeData, setstoreData] = useState([]);
-
+  const [id, setid] = useState(1);
 
 
   
@@ -102,7 +102,7 @@ export default function Dashboard() {
           useEffect(() => {
             activeItem();
             storeList();
-          },[1]);
+          },[id]);
       
 
   return (

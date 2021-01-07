@@ -38,7 +38,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 // core components
 import Admin from "layouts/Admin.js";
 // import RTL from "layouts/RTL.js";
-import Store from "layouts/Store.js";
+// import Store from "layouts/Store.js";
 import Login from "layouts/Login.js";
 import AdminLogin from "layouts/AdminLogin.js";
 
