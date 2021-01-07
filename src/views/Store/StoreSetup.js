@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // @material-ui/core components
-import InputLabel from "@material-ui/core/InputLabel";
+
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -1054,7 +1054,8 @@ InputLabelProps={{
               <p className={classes.description}>
                {this.state.storeDetails}
               </p>
-              {updateID !== "" || updateID !== undefined && (
+              {/* !== "" || updateID !== undefined */}
+              {updateID && (
  <Button color="primary" round>
  Show List
 </Button>

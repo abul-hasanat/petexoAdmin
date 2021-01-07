@@ -45,7 +45,7 @@ export default function Store({ ...rest }) {
   const [image, setImage] = React.useState(bgImage);
   const [color, setColor] = React.useState("blue");
   const [fixedClasses, setFixedClasses] = React.useState("dropdown");
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    // const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleImageClick = image => {
     setImage(image);
   };
@@ -69,7 +69,7 @@ export default function Store({ ...rest }) {
   };
   const resizeFunction = () => {
     if (window.innerWidth >= 960) {
-      setMobileOpen(false);
+      // setMobileOpen(false);
     }
   };
   // initialize and destroy the PerfectScrollbar plugin

@@ -10,8 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/styles";
+
 import Auth from "./auth";
 import Notification from "../../components/popup/notification.js"
 import "./styles/login.css";
@@ -162,7 +161,7 @@ async onSubmit(e) {
 
 
 render() {
-	const { classes } = this.props;
+
 	if (userInfo !== null) {
 		window.location.assign('http://localhost:3000/admin/dashboard');
 
