@@ -123,9 +123,12 @@ const closeNotification = ()=>{
     <Container className="loginForm" component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
+        <a  href="https://karukaj.com.bd">
+        <Avatar style={{backgroundColor :"green"}} className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
+        </a>
+      
         <Typography component="h1" variant="h5">
          Verify
         </Typography>
@@ -148,7 +151,7 @@ const closeNotification = ()=>{
           />
          
           <Button
-            style= {{backgroundColor : "green"}}
+            style= {{backgroundColor : "green", color: "white"}}
             type="submit"
             fullWidth
             variant="contained"

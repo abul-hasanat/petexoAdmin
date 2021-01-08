@@ -180,11 +180,14 @@ render() {
 		  flexDirection: 'column',
 		  alignItems: 'center',}}  >
 	  {/* className={classes.avatar} */}
-        <Avatar style={{ margin: 1,
+	  <a href="https://karukaj.com.bd">
+	  <Avatar  style={{ margin: 1,
 		  
-		  backgroundColor:  "#d60606"}} >
+		  backgroundColor:  "green"}} >
           <LockOutlinedIcon />
         </Avatar>
+	  </a>
+       
         <Typography  component="h1" variant="h5">
           Sign in
         </Typography>
@@ -223,7 +226,7 @@ render() {
             label="Remember me"
           />
           <Button
-		  style= {{backgroundColor : "green"}}
+		  style= {{backgroundColor : "green", color: "white"}}
             type="submit"
             fullWidth
             variant="contained"
