@@ -655,7 +655,7 @@ EnhancedTableToolbar.propTypes = {
                           </TableCell>
                     
                       <TableCell align="center">
-                      <ActionButton onClick={ ()=>{this.editStore(row._id)}} color = "secondary"> <EditOutlined fontSize="small"/> </ActionButton>
+                      <ActionButton onClick={ ()=>{this.editStore(row._id)}} color = "primary"> <EditOutlined fontSize="small"/> </ActionButton>
           
             <ActionButton onClick={ () => {this.deleteItem(row._id, deleteBtnText)}} color = "secondary"> <CloseIcon fontSize="small"/> </ActionButton>
                           </TableCell>
