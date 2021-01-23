@@ -289,6 +289,7 @@ EnhancedTableToolbar.propTypes = {
           dialogIsOpen : false, 
           title : "", 
           subTitle: "",
+          maxword : 50,
 
     };
 
@@ -605,7 +606,8 @@ EnhancedTableToolbar.propTypes = {
                       <TableCell align="right">{row.CatName}</TableCell>
                       <TableCell align="right">{row.SubCatName === undefined ? "" :row.SubCatName}</TableCell>
                       <TableCell align="right">{row.title}</TableCell>
-                      <TableCell align="right">{row.itemDescription}</TableCell>
+                      <TableCell align="right">{row.itemDescription.length> this.state.maxword ? row.itemDescription.slice(0,this.state.maxword).split(' ').slice(0, -1).join(' ') : row.itemDescription}</TableCell>
+                      {/* {row.itemDescription.length> this.state.maxword ? row.itemDescription.slice(0,this.state.maxword).split(' ').slice(0, -1).join(' ') : row.itemDescription} */}
                       <TableCell align="right">{row.price}</TableCell>
                       <TableCell align="right">{row.price}</TableCell>
                       <TableCell align="right">{row.price}</TableCell>

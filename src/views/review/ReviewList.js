@@ -291,6 +291,7 @@ EnhancedTableToolbar.propTypes = {
           hidStoreInfo : true,
           editStoreID : "",
           storeListHidden : false,
+          maxword:20,
     };
 
      //this.showList = this.showList.bind(this);
@@ -649,8 +650,11 @@ EnhancedTableToolbar.propTypes = {
                       </TableCell>
                       <TableCell align="right">{row.itemID.storeName}</TableCell>
                       <TableCell align="right">{row.itemID.title}</TableCell>
-                      <TableCell align="right">{row.itemID.itemDescription}</TableCell>
-                      <TableCell align="right">{row.review}</TableCell>
+                      {/* <TableCell align="right">{row.itemID.itemDescription}</TableCell> */}
+                      <TableCell align="right">{row.itemID.itemDescription.length> this.state.maxword ? row.itemID.itemDescription.slice(0,this.state.maxword).split(' ').slice(0, -1).join(' ') +"..." : row.itemID.itemDescription}</TableCell>
+                      {/* <TableCell align="right">{row.review}</TableCell> */}
+                      <TableCell align="right"> {row.review.length> this.state.maxword ? row.review.slice(0,this.state.maxword).split(' ').slice(0, -1).join(' ') +"..." : row.review}</TableCell>
+                     
                       <TableCell align="right">{row.rating}</TableCell>
                       <TableCell align="right">
                       <ActionButton  

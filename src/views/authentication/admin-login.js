@@ -63,7 +63,7 @@ const closeNotification = ()=>{
 
     localStorage.setItem("token", JSON.stringify("a1a2a3"));
     console.log("Tocken is "+ JSON.parse(localStorage.getItem("token")))
-    window.location.assign('http://localhost:3001/admin/login');
+    window.location.assign('/admin/login');
                window.location.reload(false);
     setisOpen(true)
     setmessage("Successfully Entered the Key")
@@ -126,6 +126,7 @@ const closeNotification = ()=>{
         <a  href="https://karukaj.com.bd">
         <Avatar style={{backgroundColor :"green"}} className={classes.avatar}>
           <LockOutlinedIcon />
+          
         </Avatar>
         </a>
       

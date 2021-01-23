@@ -140,7 +140,7 @@ async onSubmit(e) {
 
 						Auth.isAuthenticated = true;
 				
-						window.location.assign('http://localhost:3001/admin/dashboard');
+						window.location.assign('/admin/dashboard');
 						 window.location.reload(false);
 					}
 					// else{
