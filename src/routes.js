@@ -12,7 +12,7 @@ import ReviewList from "views/review/ReviewList.js";
 import Signout from "views/authentication/signout.js"
 import Membership from "views/Membership/membership-approve.js"
 import Featured from "views/FeatureProduct/approveIsFeatured.js"
-
+import Category from "views/Category/category.js";
 
 
 
@@ -27,6 +27,15 @@ import Featured from "views/FeatureProduct/approveIsFeatured.js"
       rtlName: "لوحة القيادة",
       icon: Dashboard,
       component: DashboardPage,
+      layout: "/admin"
+    },
+      
+    {
+      path: "/category",
+      name: "Category",
+      rtlName: "لوحة القيادة",
+      icon: BubbleChart,
+      component: Category,
       layout: "/admin"
     },
     {

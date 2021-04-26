@@ -69,13 +69,13 @@ function stableSort(array, comparator) {
 
 const headCells = [
   { id: 'username', numeric: false, disablePadding: true, label: 'Name' },
-  { id: 'store', numeric: true, disablePadding: false, label: 'Store' },
-  { id: 'country', numeric: true, disablePadding: false, label: 'Country' },
-  { id: 'address', numeric: true, disablePadding: false, label: 'Address' },
-  { id: 'email', numeric: true, disablePadding: false, label: 'Email' },
-  { id: 'phone', numeric: true, disablePadding: false, label: 'Phone' },
-  { id: 'status', numeric: true, disablePadding: false, label: 'Status'},
-  { id: 'actions', numeric: true, disablePadding: false, label: 'Actions' },
+  { id: 'store', numeric: false, disablePadding: false, label: 'Store' },
+  { id: 'country', numeric: false, disablePadding: false, label: 'Country' },
+  { id: 'address', numeric: false, disablePadding: false, label: 'Address' },
+  { id: 'email', numeric: false, disablePadding: false, label: 'Email' },
+  { id: 'phone', numeric: false, disablePadding: false, label: 'Phone' },
+  { id: 'status', numeric: false, disablePadding: false, label: 'Status'},
+  { id: 'actions', numeric: false, disablePadding: false, label: 'Actions' },
 ];
 
 function EnhancedTableHead(props) {
@@ -641,20 +641,20 @@ EnhancedTableToolbar.propTypes = {
                       <TableCell component="th" id={labelId} scope="row" padding="none">
                         {row.fullName}
                       </TableCell>
-                      <TableCell align="right">{row.store.storeName}</TableCell>
-                      <TableCell align="right">{row.store.country}</TableCell>
-                      <TableCell align="right">{row.store.stAddress}</TableCell>
-                      <TableCell align="right">{row.store.stEmail}</TableCell>
-                      <TableCell align="right">{row.store.stPhone}</TableCell>
-                      <TableCell align="right">
+                      <TableCell align="left">{row.store.storeName}</TableCell>
+                      <TableCell align="left">{row.store.country}</TableCell>
+                      <TableCell align="left">{row.store.stAddress}</TableCell>
+                      <TableCell align="left">{row.store.stEmail}</TableCell>
+                      <TableCell align="left">{row.store.stPhone}</TableCell>
+                      <TableCell align="false">
                       <ActionButton  
                       onClick={ () => {this.activeItem(row._id, activeBtnText)}}
                    
-  color = "primary"> Panding </ActionButton>
+  color = "primary"> {row.store.isActive===true?'Active': 'Panding'} </ActionButton>
                           
                           </TableCell>
                     
-                      <TableCell align="center">
+                      <TableCell align="left">
                       <ActionButton onClick={ ()=>{this.editStore(row._id)}} color = "primary"> <EditOutlined fontSize="small"/> </ActionButton>
           
             <ActionButton onClick={ () => {this.deleteItem(row._id, deleteBtnText)}} color = "secondary"> <CloseIcon fontSize="small"/> </ActionButton>
